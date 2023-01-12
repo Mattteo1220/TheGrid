@@ -1,0 +1,71 @@
+body{
+    background-color: navy;
+    margin: auto;
+    text-align: center;
+    font-family: 'Rubik Vinyl';
+    color: white;
+}
+
+#grid{
+    display:grid;
+    width: 700px;
+    height: 400px;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    margin: 25px;
+    position: relative;
+    left: 20%;
+}
+
+.grid-item{
+    border: 1px solid black;
+}
+
+.green{
+    background-color:green;
+}
+
+.red{
+    background-color: red;
+}
+
+.goldenrod{
+    background-color: goldenrod
+}
+
+#a{
+    grid-area: 1 / 1 / span 3 / 2; /* row-start / column-start / row-end / column-end */
+}
+
+#b{
+    grid-area: 1 / 2 / 1 / 4;
+}
+
+#c{
+    grid-area: 1 / 4 / 1 / 5;
+}
+
+#d {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#e{
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+#f{
+    grid-area: 2 / 4 / span 2 / span 1;
+}
+
+#g{
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+
+#h{
+    grid-area: 3 / 3 / span 1 / span 1;
+}
+
+footer{
+    font-size: 50px;
+}
